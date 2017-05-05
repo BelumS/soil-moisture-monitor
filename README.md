@@ -1,3 +1,5 @@
+
+# Soil Moisture Monitor
 An open-source Arduino-based device that transmits soil moisture data using the APRS protocol.
 
 This device is intended for use by licensed Radio amateurs.
@@ -12,8 +14,24 @@ This device is intended for use by licensed Radio amateurs.
 The device was built using: 
 * [Arduino UNO](https://www.arduino.cc/en/Main/ArduinoBoardUno) - a similar microcontroller will also work.
 * [Radiometrix HX1 RF Transmitter](http://www.radiometrix.com/content/hx1)
-* [PhantomYoYo Moisture Sensor](https://www.amazon.com/Arduino-compatible-Sensitivity-Moisture-Sensor/dp/B00AFCNR3U)
-* [SMAKN® DHT22 / AM2302 Digital Temp/Humid Sensor](https://www.amazon.com/Digital-Temperature-Humidity-measure-Arduino/dp/B018JO5BRK/ref=sr_1_3?ie=UTF8&qid=1487101256&sr=8-3&keywords=dht22)
+* [DFRobot Gravity: Analog Capacitive Soil Moisture Sensor](https://www.amazon.com/gp/product/B01GHY0N4K/ref=ox_sc_act_title_1?ie=UTF8&psc=1&smid=A2EH5PO307BR7O)
+
 
 ## Firmware
-The firmware is available at (https://github.com/UWRF-DoTS/soil-moisture-monitor). It is a modified version of the [original Trackuino firmware](https://github.com/trackuino/trackuino) to support the device's purposes. 
+The firmware is available at (https://github.com/UWRF-DoTS/soil-moisture-monitor). It is a modified version of the [original Trackuino firmware](https://github.com/trackuino/trackuino), along with [Project Horus](https://code.google.com/archive/p/project-horus/source/default/source), a fork of the trackuino firmware, to support the device's purposes. 
+
+## Building
+Check the [Wiki](#) for the step-by-step guide on how to build the device.
+
+## Testing
+In order to test the device before production release, I had to use the following hardware and software, along with the above firmware.
+ * [Baofeng UV-5R+ HAM Radio](https://www.amazon.com/BaoFeng-UV-5R-Dual-Radio-Black/dp/B007H4VT7A)
+ * [MXL AC-404 Portable USB - Conferencing Microphone](https://www.bhphotovideo.com/c/product/581568-REG/MXL_AC_404_AC_404_Portable_USB_Conferencing.html)
+ * [BTECH APRS-K2 Cable for Baofeng](https://www.amazon.com/APRS-K2-Connector-BaoFeng-APRSDroid-Compatible/dp/B01LMIBAZW)
+ * [APRSDroid](https://aprsdroid.org/)
+ * [qtmm](https://github.com/csete/qtmm)
+ 
+## Download
+The latest version is 1.00
+
+Use the `Download ZIP` button to get the source code.
